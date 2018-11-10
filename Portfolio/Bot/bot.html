@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127829451-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127829451-1');
+</script>
+  <meta charset="UTF-8">
+  <title>Harsh Chatbot</title>
+   <!-- Favicon -->
+        <link rel="icon" href="assets/images/icon.png" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-image:url(botbg.jpg);">
+<div class="container">
+  <!-- Trigger the modal with a button --> 
+  <h1 style="color: red; padding: 5%; margin: 10%;">Click on the chatbot that is <br>Given on Right-Bottom Corner...</h1>
+ 
+  <button type="button" class="popup" id="myBtn" title="Hi, Click Here!"></button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-comment" title="Type Hi, Who are you?, or What is time?, etc."></span></h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+            
+          <div id='bodybox'>
+    <p id="chatlog7" class="chatlog">&nbsp;</p>
+    <p id="chatlog6" class="chatlog">&nbsp;</p>
+    <p id="chatlog5" class="chatlog">&nbsp;</p>
+    <p id="chatlog4" class="chatlog">&nbsp;</p>
+    <p id="chatlog3" class="chatlog">&nbsp;</p>
+    <p id="chatlog2" class="chatlog">&nbsp;</p>
+    <span style="background-image: url() !important; "></span><p id="chatlog1" class="chatlog"><img class="welcome-img1" src="https://summa.es/blog/wp-content/uploads/2015/05/c4a06cc86a1a67110c73b416b1db9be9.gif"></p>
+    <input type="text" name="chat" id="chatbox" style="text-align: right;" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+    </div>
+        </div>
+
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/464612/nlp_compromise.min.js'></script>
+  <script src="main.js"></script>    
+
+<script type="text/javascript">  //hint alert!
+    function hint() {
+      alert('You can Ask: Hi, Who are you?, Which services are you providing?, How can I reach you?, and many more...!!');
+    }
+</script>
+
+        <div class="modal-footer">
+          <button onclick="hint()" class="btn btn-success btn-default pull-left"><span class="glyphicon glyphicon-info-sign"></span> Hint</button>
+          <button type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          </div>
+      </div>
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+</html>

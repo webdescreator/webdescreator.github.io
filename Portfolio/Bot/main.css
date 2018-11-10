@@ -1,0 +1,77 @@
+  .modal-header, h4, .close {
+      background-color: #4080ff;
+      color:white;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+
+.popup{
+    width: 70px;
+    height: 70px;
+    background-size: 68px;
+    border-radius: 50%!important;
+    margin: -1px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    background-image: url('img-chat.jpg'); 
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+
+
+.chatlog {
+   font: 15px arial, sans-serif;
+   word-break: break-all;
+   line-height: 25px;
+}
+
+#chatbox {
+  font: 17px arial, sans-serif;
+  height: 22px;
+  width: 100%;
+  text-align: right;
+}
+
+h1 {  margin: auto; }
+
+pre {
+  background-color: #f0f0f0;
+  margin-left: 20px;
+}
+#chatlog1, #chatlog3, #chatlog5, #chatlog7{
+  background-color: #4080ff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+#chatlog2, #chatlog4, #chatlog6{
+  background-color: white;
+  border-radius: 10px;
+   padding-right: 10px;
+  text-align: right;
+    color: black;
+}
+.t-image {
+    position: absolute;
+    float: left;
+}
+.t-image img {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+.clear{
+  clear: both;
+}
+.welcome-img2{
+  width: 60%;
+  height:50%;
+  margin:5% 10% 5% 10%; 
+  border-radius: 5px;
+}
+
+.welcome-img1{height: 100%; width: 100%; margin:0%; left: 0%; padding: 0;"}

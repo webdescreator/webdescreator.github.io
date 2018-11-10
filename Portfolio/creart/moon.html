@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127829451-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127829451-1');
+</script>
+  <meta charset="UTF-8">
+	<title>Moon Effect</title>
+	<style type="text/css">
+		.sky {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: relative;
+}
+.sky .moon-wrapper {
+  z-index: 2;
+  -webkit-animation: MoneMove 20s infinite;
+  position: absolute;
+  left: 0px;
+  bottom: -100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sky .moon-wrapper .moon {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  position: absolute;
+}
+.sky .moon-wrapper .cover {
+  width: 100px;
+  height: 100px;
+  background: #0a0a0a;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-animation: MoonRise 20s infinite;
+}
+
+.star-wrapper {
+  position: relative;
+}
+.star-wrapper .star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+}
+.star-wrapper .star.big {
+  width: 15px;
+  height: 15px;
+  -webkit-animation: twinkle-3 3s infinite;
+}
+.star-wrapper .star.medium {
+  width: 9px;
+  height: 9px;
+  -webkit-animation: twinkle-2 2s infinite;
+}
+.star-wrapper .star.small {
+  width: 5px;
+  height: 5px;
+  -webkit-animation: twinkle-1 1s infinite;
+}
+
+@-webkit-keyframes MoonRise {
+  0% {
+    top: 0px;
+    right: 0px;
+  }
+  100% {
+    top: 75px;
+    right: 75px;
+  }
+}
+@-webkit-keyframes MoneMove {
+  0% {
+    left: 0px;
+    bottom: 0px;
+  }
+  100% {
+    left: 600px;
+    bottom: 600px;
+  }
+}
+@-webkit-keyframes twinkle-1 {
+  0% {
+    background: rgba(0, 0, 200, 0.6);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+@-webkit-keyframes twinkle-2 {
+  0% {
+    background: rgba(100, 0, 0, 0.6);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+@-webkit-keyframes twinkle-3 {
+  0% {
+    background: rgba(0, 50, 100, 0.8);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+	</style>
+
+</head>
+<body>
+<div class="sky">
+  <div class="moon-wrapper">
+    <div class="moon"></div>
+    <div class="cover"></div>
+  </div>
+  
+  <div class="star-wrapper">
+      <div class="star one small" style="top:100px;left:100px;"></div>    
+      <div class="star one small" style="top:150px;left:600px;"></div>    
+      <div class="star one small" style="top:400px;left:200px;"></div>
+    <div class="star one small" style="top:30px;left:350px"></div>
+    <div class="star one small" style="top:300px;left:320px"></div>
+    <div class="star one small" style="top:450px;left:450px"></div>
+    <div class="star one small" style="top:500px;left:50px"></div>
+    <div class="star one small" style="top:30px;left:350px"></div>
+    <div class="star one small" style="top:230px;left:150px"></div>
+    <div class="star one small" style="top:200px;left:380px"></div>
+ 
+    <div class="star one small" style="top:30px;right:350px"></div>
+    <div class="star one small" style="top:300px;right:320px"></div>
+    <div class="star one small" style="top:450px;right:450px"></div>
+    <div class="star one small" style="top:500px;right:50px"></div>
+    <div class="star one small" style="top:30px;right:350px"></div>
+    <div class="star one small" style="top:230px;right:150px"></div>
+    <div class="star one small" style="top:200px;right:380px"></div>
+    <div class="star one small" style="top:500px;right:700px"></div>
+    <div class="star one small" style="top:400px;right:780px"></div>
+
+    <div class="star one medium" style="top:100px;left:20px"></div>
+    <div class="star one medium" style="top:60px;left:550px"></div>
+    <div class="star one medium" style="top:530px;left:350px"></div>
+    <div class="star one medium" style="top:300px;left:450px"></div>
+
+    <div class="star one medium" style="top:100px;right:20px"></div>
+    <div class="star one medium" style="top:60px;right:550px"></div>
+    <div class="star one medium" style="top:530px;right:350px"></div>
+    <div class="star one medium" style="top:300px;right:450px"></div>
+
+    <div class="star one big" style="top:550px;right:150px"></div>
+    <div class="star one big" style="top:530px;right:150px"></div>
+    <div class="star one big" style="top:510px;right:150px"></div>
+    <div class="star one big" style="top:490px;right:150px"></div>
+    <div class="star one big" style="top:470px;right:150px"></div>
+
+    <div class="star one big" style="top:510px;right:170px"></div>
+    <div class="star one big" style="top:510px;right:190px"></div>
+    <div class="star one big" style="top:510px;right:210px"></div>
+    <div class="star one big" style="top:510px;right:230px"></div>
+
+    <div class="star one big" style="top:550px;right:230px"></div>
+    <div class="star one big" style="top:530px;right:230px"></div>
+    <div class="star one big" style="top:510px;right:230px"></div>
+    <div class="star one big" style="top:490px;right:230px"></div>
+    <div class="star one big" style="top:470px;right:230px"></div>
+  </div>
+</div>
+</body>
+</html>
