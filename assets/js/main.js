@@ -38,7 +38,7 @@ NOTE: This is the custom jQuery file for the template
     	$(".spiner_button").on("click", function(event){
             event.preventDefault();
             if ( $(this).hasClass("slide_in_out") ) {
-            $(".demo_panel_box").stop().animate({left:"-340px"}, 500);
+            $(".demo_panel_box").stop().animate({left:"-400px"}, 500);
             } else {
             $(".demo_panel_box").stop().animate({left:"0px"}, 500);
             }
